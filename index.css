@@ -1,26 +1,25 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-/* :root{
-  --color: #FAF9F6;
-} */
+:root {
+  --background: #faf9f6;
+  --text: #000;
+}
 
-html, body{
+html,
+body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
-  background: #FAF9F6;
-  /* background-color: var(--background); */
+  background: var(--background);
 }
 
-/* body.dark{
-  --box-shadow-color: #cbc6c6;
-  --background: #463b3b;
-  --background-body: #9b9090;
-  --tongle: #FAF9F6;
-} */
+body.dark {
+  --background: #28282B;
+  --text: #fff;
+}
 
 .wrapper {
   display: flex;
@@ -28,9 +27,10 @@ html, body{
   height: 25%;
   align-items: center;
   padding-top: 15px;
+  color: var(--text);
 }
 
-.content{
+.content {
   display: flex;
   flex: 1 0 auto;
   flex-direction: row;
@@ -39,7 +39,7 @@ html, body{
   padding: 25px;
 }
 
-.content ol{
+.content ol {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,7 +47,7 @@ html, body{
   list-style: none;
 }
 
-.content .text{
+.content .text {
   font-size: 135%;
   text-indent: 25px;
   padding-top: 15px;
@@ -57,7 +57,7 @@ html, body{
   margin: 15px;
 }
 
-.item{
+.item {
   padding-top: 15px;
   padding-bottom: 200px;
   padding-left: 15px;
@@ -65,17 +65,17 @@ html, body{
   margin: 15px;
 }
 
-.item a{
+.item a {
   text-decoration: none;
-  color: black;
+  color: var(--text);
   font-size: 175%;
 }
 
-.item a:hover{
+.item a:hover {
   color: red;
 }
 
-.home{
+.home {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -83,19 +83,18 @@ html, body{
   padding-bottom: 10px;
 }
 
-.home a{
+.home a {
   text-decoration: none;
   color: black;
   font-size: 120%;
-  
 }
 
-.home a:hover{
+.home a:hover {
   color: red;
 }
 
-#helloButton{
-  
+#helloButton {
+  cursor: pointer;
   background-color: #FFE5B4;
   border: none;
   border-radius: 5px;
@@ -103,7 +102,7 @@ html, body{
   font-size: 60%;
 }
 
-#toggle-theme-btn{
+#toggle-theme-btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -112,19 +111,17 @@ html, body{
   transition: 5ms;
 }
 
-#toggle-theme-btn:hover{
+#toggle-theme-btn:hover {
   background: #dbdbdb;
 }
 
-#toggle-theme-btn img{
+#toggle-theme-btn img {
   width: 32px;
 }
 
-
-
-.footer{
+.footer {
   flex: 0 0 auto;
   padding-left: 15px;
   margin-top: 130px;
+  color: var(--text);
 }
-
