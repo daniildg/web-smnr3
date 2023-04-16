@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
+  <link rel="stylesheet" href="./index.css">
+  <title>JavaScript HW</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Семинар 3. Домашнее задание.</h1>
+  </div>
+  <div class="content">
+    <ol>
+      <li class="item"><a href="./task1/task1.html">Задание 1</a></li>
+      <li class="item"><a href="./task2/task2.html">Задание 2</a></li>
+      <li class="item"><a href="./task3/task3.html">Задание 3</a></li>
+      <li class="item"><a href="./task4/task4.html">Задание 4</a></li>
+    </ol>
+  </div>
+  <div class="home">
+    <buttom id="toggle-theme-btn"><img src="./images/button.png" alt="" id="toggle-theme-image"></buttom>
+    <button id="helloButton" onclick="Hello()">Нажать</button>
+    <script type="text/javascript" src="./dark__theme/dark__theme.js"></script>
+    <script>
+      function Hello() {
+        let usrnm = prompt("Введите ваше Имя")
+        alert(`Приветствую, ${usrnm}!`)
+      }
+    </script>
+  </div>
+  <div class="footer">
+    <p>Гришин Даниил</p>
+    <p>GeekBrains, 2023</p>
+  </div>
+</body>
+</html>
